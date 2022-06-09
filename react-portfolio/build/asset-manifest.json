@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d92a26dd.css",
+    "main.js": "/static/js/main.fb879d44.js",
+    "static/media/About_Me_Image.jpg": "/static/media/About_Me_Image.833b4fd08d8adaf9f1f3.jpg",
+    "static/media/Chance-Robinson-Resume-2022.pdf": "/static/media/Chance-Robinson-Resume-2022.35399c017a319f513bc6.pdf",
+    "static/media/bright-squares.png": "/static/media/bright-squares.79000482fe8acfa2e99c.png",
+    "index.html": "/index.html",
+    "main.d92a26dd.css.map": "/static/css/main.d92a26dd.css.map",
+    "main.fb879d44.js.map": "/static/js/main.fb879d44.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d92a26dd.css",
+    "static/js/main.fb879d44.js"
+  ]
+}
