@@ -19,23 +19,11 @@ nav a {
     border-radius: 50%;
     display: flex;
     color: rgb(27, 7, 7);
-    position: relative;
 }
 
-nav.active {
-    background-color: rgba(0, 0, 0, 0.4);
+nav a.active {
+    background: blue;
 }
-
-nav a::before {
-    content: "";
-    background-color: rgba(0, 0, 0, 0.4);
-    transform: scaleX(0);
-}
-
-nav a:hover::before {
-    transform: scaleX(1);
-}
-
 
 /* MEDIA QUERIES */
 @media screen and (max-width: 1024px) {

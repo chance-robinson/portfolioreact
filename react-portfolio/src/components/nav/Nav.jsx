@@ -5,50 +5,48 @@ import {FiUser} from 'react-icons/fi'
 import {AiOutlineBook} from 'react-icons/ai'
 import {BsBriefcase} from 'react-icons/bs'
 import {AiOutlineContacts} from 'react-icons/ai'
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 
 const Nav = () => {
 
-  const sections = document.querySelectorAll("section");
-  const nav = document.querySelector("nav");
-  // const navList = document.querySelectorAll("nav");
+  const [testSections, setTestConnection] = useState([]);
+  const [navList, setNavList] = useState([]);
 
   const options = {
-      threshold: "0.6",
+      threshold: ".7",
   };
 
   const observer = new IntersectionObserver(entries => {
 
       entries.forEach( e => {
           if (e.isIntersecting) {
-            console.log(e.target.id);
-              if (e.target.id !== "#") {
-                  nav.classList.add("active");
-              }else {
-                  nav.classList.remove("active");
-              }
-
-              // //SECTION INDICATOR
-              // navList.forEach(link => {
-              //     if (e.target.id === link.dataset.nav) {
-              //         link.classList.add("active");
-              //     }
-              // });
+              //SECTION INDICATOR
+              navList.forEach(link => {
+                  if (e.target.id === link.dataset.nav) {
+                    link.classList.add("active");
+                  }else {
+                    link.classList.remove("active");
+                  }
+              });
           }
       });
 
   }, options);
 
   useEffect(() => {
-    sections.forEach(section => {
-      console.log("Hi");
+    testSections.forEach(section => {
       observer.observe(section);
   })
-    }, []);
+    }, [testSections]);
+
+  useEffect(() => {
+    setTestConnection(document.querySelectorAll("section"));
+    setNavList(document.querySelectorAll("nav a"));
+   }, [document])
 
   return (
     <nav>
-        <a data-nav="#" href="#"><HiOutlineHome/></a>
+        <a data-nav="home" href="#home"><HiOutlineHome/></a>
         <a data-nav="about" href="#about"><FiUser/></a>
         <a data-nav="experience" href="#experience"><AiOutlineBook/></a>
         <a data-nav="portfolio" href="#portfolio"><BsBriefcase/></a>
