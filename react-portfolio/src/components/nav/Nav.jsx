@@ -1,57 +1,59 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import './nav.css'
 import {HiOutlineHome} from 'react-icons/hi'
 import {FiUser} from 'react-icons/fi'
 import {AiOutlineBook} from 'react-icons/ai'
 import {BsBriefcase} from 'react-icons/bs'
 import {AiOutlineContacts} from 'react-icons/ai'
-import { useState, useRef, useMemo, } from 'react'
+import { useEffect } from 'react'
 
 const Nav = () => {
-  // const targetRef = useRef(null);
-  // const [isVisible, setIsVisible] = useState(false);
 
-  // const callbackFunction = entries => {
-  //   const[entry] = entries;
-  //   setIsVisible(entry.isIntersecting);
-  // };
-  
-  // const options = useMemo(() => {
-  //   return {
-  //     root: null,
-  //     rootMargin: '0px',
-  //     threshold: 0.4
-  //   }
-  // });
+  const sections = document.querySelectorAll("section");
+  const nav = document.querySelector("nav");
+  // const navList = document.querySelectorAll("nav");
 
-  // useEffect(() => {
-  //   const observer = new IntersectionObserver(callbackFunction, options);
-  //   const currentTarget = targetRef.current;
-  //   if(currentTarget) observer.observe(currentTarget);
+  const options = {
+      threshold: "0.6",
+  };
 
-  //   return () => {
-  //     if(currentTarget) observer.unobserve(currentTarget);
-  //   }
-  // }, [targetRef, options]);
+  const observer = new IntersectionObserver(entries => {
 
-  const [activeNav, setActiveNav] = useState('#');
-  
+      entries.forEach( e => {
+          if (e.isIntersecting) {
+            console.log(e.target.id);
+              if (e.target.id !== "#") {
+                  nav.classList.add("active");
+              }else {
+                  nav.classList.remove("active");
+              }
+
+              // //SECTION INDICATOR
+              // navList.forEach(link => {
+              //     if (e.target.id === link.dataset.nav) {
+              //         link.classList.add("active");
+              //     }
+              // });
+          }
+      });
+
+  }, options);
+
+  useEffect(() => {
+    sections.forEach(section => {
+      console.log("Hi");
+      observer.observe(section);
+  })
+    }, []);
 
   return (
     <nav>
-        <a href="#" className={activeNav === '#' ? 'active' : ''}><HiOutlineHome/></a>
-        <a href="#about"  className={activeNav === '#about' ? 'active' : ''}><FiUser/></a>
-        <a href="#experience"  className={activeNav === '#experience' ? 'active' : ''}><AiOutlineBook/></a>
-        <a href="#portfolio" className={activeNav === '#portfolio' ? 'active' : ''}><BsBriefcase/></a>
-        <a href="#contact"  className={activeNav === '#contact' ? 'active' : ''}><AiOutlineContacts/></a>
+        <a data-nav="#" href="#"><HiOutlineHome/></a>
+        <a data-nav="about" href="#about"><FiUser/></a>
+        <a data-nav="experience" href="#experience"><AiOutlineBook/></a>
+        <a data-nav="portfolio" href="#portfolio"><BsBriefcase/></a>
+        <a data-nav="contact" href="#contact"><AiOutlineContacts/></a>
     </nav>
-    // <nav>
-    //     <a href="#" onClick={()=> setActiveNav('#')} className={activeNav === '#' ? 'active' : ''}><HiOutlineHome/></a>
-    //     <a href="#about" onClick={()=> setActiveNav('#about')} className={activeNav === '#about' ? 'active' : ''}><FiUser/></a>
-    //     <a href="#experience" onClick={()=> setActiveNav('#experience')} className={activeNav === '#experience' ? 'active' : ''}><AiOutlineBook/></a>
-    //     <a href="#portfolio" onClick={()=> setActiveNav('#portfolio')} className={activeNav === '#portfolio' ? 'active' : ''}><BsBriefcase/></a>
-    //     <a href="#contact" onClick={()=> setActiveNav('#contact')} className={activeNav === '#contact' ? 'active' : ''}><AiOutlineContacts/></a>
-    // </nav>
   )
 }
 
