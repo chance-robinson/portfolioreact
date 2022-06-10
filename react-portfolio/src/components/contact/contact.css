@@ -82,8 +82,7 @@ input:hover,textarea:hover {
         width: 100%;  
     }
     form {
-        margin: auto;
-        padding: 2rem;
+        margin: 0 auto;
         width: 85%;
     }
 }
