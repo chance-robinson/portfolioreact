@@ -9,40 +9,41 @@ import { useEffect, useState } from 'react'
 
 const Nav = () => {
 
-  const [testSections, setTestConnection] = useState([]);
+  const [sectionsList, setSections] = useState([]);
   const [navList, setNavList] = useState([]);
 
-  const options = {
-      threshold: ".7",
-  };
-
-  const observer = new IntersectionObserver(entries => {
-
-      entries.forEach( e => {
-          if (e.isIntersecting) {
-              //SECTION INDICATOR
-              navList.forEach(link => {
-                  if (e.target.id === link.dataset.nav) {
-                    link.classList.add("active");
-                  }else {
-                    link.classList.remove("active");
-                  }
-              });
-          }
-      });
-
-  }, options);
+  useEffect(() => {
+    setSections(document.querySelectorAll("section"));
+    setNavList(document.querySelectorAll("nav a"));
+   }, [])
 
   useEffect(() => {
-    testSections.forEach(section => {
+
+    const options = {
+        threshold: ".5",
+    };
+
+    const observer = new IntersectionObserver(entries => {
+
+        entries.forEach( e => {
+            if (e.isIntersecting) {
+                //SECTION INDICATOR
+                navList.forEach(link => {
+                    if (e.target.id === link.dataset.nav) {
+                      link.classList.add("active");
+                    }else {
+                      link.classList.remove("active");
+                    }
+                });
+            }
+        });
+
+    }, options);
+
+    sectionsList.forEach(section => {
       observer.observe(section);
   })
-    }, [testSections]);
-
-  useEffect(() => {
-    setTestConnection(document.querySelectorAll("section"));
-    setNavList(document.querySelectorAll("nav a"));
-   }, [document])
+    }, [sectionsList,navList]);
 
   return (
     <nav>

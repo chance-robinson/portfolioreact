@@ -15,7 +15,7 @@ nav {
 
 nav a {
     background: transparent;
-    padding: .4rem;
+    padding: .6rem;
     border-radius: 50%;
     display: flex;
     color: rgb(27, 7, 7);
@@ -41,8 +41,12 @@ nav a.active {
         background: #eddcd979;
         padding: 0.6rem 1.7rem;
         bottom: 2.5rem;
+        max-width: 95%;
     }
     nav a {
-        padding: .7rem;
+        padding: .4rem;
+    }
+    nav a.active {
+        background: blue;
     }
 }
