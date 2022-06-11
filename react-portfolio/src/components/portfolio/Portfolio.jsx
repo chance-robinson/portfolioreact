@@ -26,7 +26,7 @@ const Portfolio = () => {
         <div className="portfolio__items">
           <article className='portfolio__item'>
             <div className="portfolio__item-image">
-              <a href="https://photobomb.chancerobinson.xyz/" target='_blank' rel='noreferrer' ><LazyLoadImage src={PhotoBomb}/></a>
+              <a href="https://photobomb.chancerobinson.xyz/" target='_blank' rel='noopener noreferrer' ><LazyLoadImage src={PhotoBomb}/></a>
             </div>
             <h3>Photo Website</h3>
             <div className="technologies__container">
@@ -44,13 +44,13 @@ const Portfolio = () => {
               </div>
             </div>
             <div className="portfolio__item-cta">
-              <a href="https://github.com/BYUCS260/photo-bomb-chance-robinson" target='_blank' rel='noreferrer' className='btn btn-primary'>GitHub</a>
-              <a href="https://photobomb.chancerobinson.xyz/" target='_blank' rel='noreferrer' className='btn'>Live Website</a>
+              <a href="https://github.com/BYUCS260/photo-bomb-chance-robinson" target='_blank' rel='noopener noreferrer' className='btn btn-primary'>GitHub</a>
+              <a href="https://photobomb.chancerobinson.xyz/" target='_blank' rel='noopener noreferrer' className='btn'>Live Website</a>
             </div>
           </article>
           <article className='portfolio__item'>
             <div className="portfolio__item-image">
-              <a href="https://3b.chancerobinson.xyz/" target='_blank' rel='noreferrer'><LazyLoadImage src={MotherEarth}/></a>
+              <a href="https://3b.chancerobinson.xyz/" target='_blank' rel='noopener noreferrer'><LazyLoadImage src={MotherEarth}/></a>
             </div>
             <h3>Shopping Layout</h3>
             <div className="technologies__container">
@@ -64,13 +64,13 @@ const Portfolio = () => {
               </div>
             </div>
             <div className="portfolio__item-cta">
-              <a href="https://github.com/BYUCS260/grocery-store-chance-robinson" target='_blank' rel='noreferrer' className='btn btn-primary'>GitHub</a>
-              <a href="https://3b.chancerobinson.xyz/" target='_blank' rel='noreferrer' className='btn'>Live Website</a>
+              <a href="https://github.com/BYUCS260/grocery-store-chance-robinson" target='_blank' rel='noopener noreferrer' className='btn btn-primary'>GitHub</a>
+              <a href="https://3b.chancerobinson.xyz/" target='_blank' rel='noopener noreferrer' className='btn'>Live Website</a>
             </div>
           </article>
           <article className='portfolio__item'>
             <div className="portfolio__item-image">
-              <a href="https://github.com/chance-robinson/personalwebsite" target='_blank' rel='noreferrer'><LazyLoadImage src={BasicWebsite}/></a>
+              <a href="https://github.com/chance-robinson/personalwebsite" target='_blank' rel='noopener noreferrer'><LazyLoadImage src={BasicWebsite}/></a>
             </div>
             <h3>Basic Personal Website</h3>
             <div className="technologies__container">
@@ -84,13 +84,13 @@ const Portfolio = () => {
               </div>
             </div>
             <div className="portfolio__item-cta">
-              <a href="https://github.com/chance-robinson/personalwebsite" target='_blank' rel='noreferrer' className='btn btn-primary'>GitHub</a>
-              <a href="https://chancerobinson.xyz/" target='_blank' rel='noreferrer' className='btn'>Live Website</a>
+              <a href="https://github.com/chance-robinson/personalwebsite" target='_blank' rel='noopener noreferrer' className='btn btn-primary'>GitHub</a>
+              <a href="https://chancerobinson.xyz/" target='_blank' rel='noopener noreferrer' className='btn'>Live Website</a>
             </div>
           </article>
           <article className='portfolio__item'>
             <div className="portfolio__item-image">
-              <a href="https://github.com/chance-robinson/portfolioreact" target='_blank' rel='noreferrer'><LazyLoadImage src={reactPortfolio}/></a>
+              <a href="https://github.com/chance-robinson/portfolioreact" target='_blank' rel='noopener noreferrer'><LazyLoadImage src={reactPortfolio}/></a>
             </div>
             <h3>Portfolio Website</h3>
             <div className="technologies__container">
@@ -108,8 +108,8 @@ const Portfolio = () => {
               </div>
             </div>
             <div className="portfolio__item-cta">
-              <a href="https://github.com/chance-robinson/portfolioreact" target='_blank' rel='noreferrer' className='btn btn-primary'>GitHub</a>
-              <a href="https://portfolio.chancerobinson.xyz/" target='_blank' rel='noreferrer' className='btn'>Live Website</a>
+              <a href="https://github.com/chance-robinson/portfolioreact" target='_blank' rel='noopener noreferrer' className='btn btn-primary'>GitHub</a>
+              <a href="https://portfolio.chancerobinson.xyz/" target='_blank' rel='noopener noreferrer' className='btn'>Live Website</a>
             </div>
           </article>
         </div>

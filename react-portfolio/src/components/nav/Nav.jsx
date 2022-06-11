@@ -47,7 +47,7 @@ const Nav = () => {
 
   return (
     <nav>
-        <a data-nav="home" href="#home"><HiOutlineHome/></a>
+        <a data-nav="home" href="#top"><HiOutlineHome/></a>
         <a data-nav="about" href="#about"><FiUser/></a>
         <a data-nav="experience" href="#experience"><AiOutlineBook/></a>
         <a data-nav="portfolio" href="#portfolio"><BsBriefcase/></a>
