@@ -1,16 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.50b4916c.css",
-    "main.js": "/static/js/main.ee17ae54.js",
+    "main.css": "/static/css/main.55284a73.css",
+    "main.js": "/static/js/main.b5142498.js",
+    "static/media/photobomb.PNG": "/static/media/photobomb.cd973f3490ee139c2f50.PNG",
     "static/media/About_Me_Image.jpg": "/static/media/About_Me_Image.833b4fd08d8adaf9f1f3.jpg",
+    "static/media/motherEarth.PNG": "/static/media/motherEarth.4411d2f9399210661b07.PNG",
+    "static/media/portfolioReact.PNG": "/static/media/portfolioReact.6c6824130ef06f6170d2.PNG",
     "static/media/Chance-Robinson-Resume-2022.pdf": "/static/media/Chance-Robinson-Resume-2022.35399c017a319f513bc6.pdf",
     "static/media/bright-squares.png": "/static/media/bright-squares.79000482fe8acfa2e99c.png",
     "index.html": "/index.html",
-    "main.50b4916c.css.map": "/static/css/main.50b4916c.css.map",
-    "main.ee17ae54.js.map": "/static/js/main.ee17ae54.js.map"
+    "main.55284a73.css.map": "/static/css/main.55284a73.css.map",
+    "main.b5142498.js.map": "/static/js/main.b5142498.js.map"
   },
   "entrypoints": [
-    "static/css/main.50b4916c.css",
-    "static/js/main.ee17ae54.js"
+    "static/css/main.55284a73.css",
+    "static/js/main.b5142498.js"
   ]
 }
