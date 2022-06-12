@@ -17,7 +17,7 @@ const Contact = () => {
             <a href="mailto:brighamyoung2@gmail.com" target='_blank' rel='noopener noreferrer'>Send a message</a>
           </article>
         </div>
-        <form name="passContact" action="." method='POST'>
+        <form name="passContact" action="." method='post'>
           <input type="text" name='name' placeholder='Full Name' required/>
           <input type="email" name='email' placeholder='Email' required/>
           <textarea name="message" rows="10" placeholder='Message' required></textarea>

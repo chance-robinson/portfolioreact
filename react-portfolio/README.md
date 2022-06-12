@@ -3,7 +3,7 @@
 2. nav.jsx threshold options, not properly displaying location on mobile
 
 # Need to implement
-1. Email Backend using Python to send confirmatation email/ normal email to my address
+1. Add redirect within same page after form submission to let user know the form was sent succesfully or whether or not there was an error 
 
 # Need to update
 1. Colors are atrocious
