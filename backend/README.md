@@ -3,3 +3,4 @@
 3. pip3 install Flask
 4. test server: python3 server.py (python server.py on windows)
 5. if having issues fix use : npm audit fix --force
+6. smtp troubles : enable IMAP for gmail

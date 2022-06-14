@@ -64,6 +64,14 @@ input:hover,textarea:hover {
     border: 3px solid var(--color-text);
 }
 
+.Modal {
+    background-color: blue;
+}
+
+.Overlay {
+    background-color: blue;
+}
+
 
 
 /* MEDIA QUERIES */

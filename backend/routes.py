@@ -1,17 +1,21 @@
 import os
 import smtplib
-from routes import getValue
-import logging
-from flask import Flask, send_from_directory, request, redirect, url_for
+from flask import Flask, send_from_directory, request, redirect
+from flask_cors import CORS, cross_origin
 
 #all this information is stored on server under os.environ
-EMAIL_ADDRESS = os.environ.get('EMAIL_USER')
-EMAIL_PASSWORD = os.environ.get('EMAIL_PASS')
-PERSONAL_EMAIL = os.environ.get('PERSONAL_EMAIL')
+# EMAIL_ADDRESS = os.environ.get('EMAIL_USER')
+# EMAIL_PASSWORD = os.environ.get('EMAIL_PASS')
+# PERSONAL_EMAIL = os.environ.get('PERSONAL_EMAIL')
+EMAIL_ADDRESS = 'chancerobinsonportfolio@gmail.com'
+SMTP_PASSWORD = 'qxbmlddkgekfiust'
+PERSONAL_EMAIL = 'brighamyoung2@gmail.com'
 
 app = Flask(__name__, static_folder='../react-portfolio/build/')
+CORS(app, support_credentials=True)
 
 @app.route("/", methods=['post'])
+@cross_origin(supports_credentials=True)
 def getValue():
     USER_ADDRESS = request.form['email'] #contact email
 
@@ -33,7 +37,7 @@ def getValue():
         #smtp.sendmail(SENDER,RECEIVER, msg)
         smtp.sendmail(EMAIL_ADDRESS, USER_ADDRESS, email_contact)
         smtp.sendmail(EMAIL_ADDRESS, PERSONAL_EMAIL, email_personal)
-    return redirect(f"/#contact")
+    return ('', 204)
 
 if __name__ == '__main__':
     app.run(use_reloader=True, port=5000, threaded=True)

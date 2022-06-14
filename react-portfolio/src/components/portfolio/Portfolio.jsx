@@ -16,6 +16,7 @@ import {FaNodeJs} from 'react-icons/fa'
 import {SiMongodb} from 'react-icons/si'
 import {FaReact} from 'react-icons/fa'
 import {FaPython} from 'react-icons/fa'
+import {SiFlask} from 'react-icons/si'
 
 const Portfolio = () => {
   return (
@@ -104,6 +105,7 @@ const Portfolio = () => {
                 <div className="backend__container">
                   <FaNodeJs></FaNodeJs>
                   <FaPython></FaPython>
+                  <SiFlask></SiFlask>
                 </div>
               </div>
             </div>
