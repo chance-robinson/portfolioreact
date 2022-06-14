@@ -14,7 +14,7 @@ PERSONAL_EMAIL = 'brighamyoung2@gmail.com'
 app = Flask(__name__, static_folder='../react-portfolio/build/')
 CORS(app, support_credentials=True)
 
-@app.route("/", methods=['post'])
+@app.route("http://127.0.0.1:5000/", methods=['post'])
 @cross_origin(supports_credentials=True)
 def getValue():
     USER_ADDRESS = request.form['email'] #contact email
