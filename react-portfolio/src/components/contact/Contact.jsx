@@ -8,7 +8,7 @@ Modal.setAppElement('#root')
 const Contact = () => {
   const [modalSuccess, setModalSuccess] = useState(false);
   const [modalError, setModalError] = useState(false);
-
+  
   const submitSuccess = event => {
     setModalSuccess(true);
   }
@@ -50,13 +50,13 @@ const Contact = () => {
     <section id='contact'>
       <h5>Let's get in touch</h5>
       <h2>Contact Me</h2>
-      <Modal isOpen={modalSuccess} onRequestClose={() => setModalSuccess(false)} >
+      <Modal isOpen={modalSuccess} onRequestClose={() => setModalSuccess(false)} className="Modal" overlayClassName="Modal__Overlay">
         <p>You're form was submitted</p>
-        <button onClick={() => setModalSuccess(false)}>Close</button>
+        <button className='btn' onClick={() => setModalSuccess(false)}>Close</button>
       </Modal>
-      <Modal isOpen={modalError} onRequestClose={() => setModalError(false)}>
+      <Modal isOpen={modalError} onRequestClose={() => setModalError(false)} className="Modal" overlayClassName="Modal__Overlay">
         <p>Form not submitted, try again.</p>
-        <button onClick={() => setModalError(false)}>Close</button>
+        <button className='btn' onClick={() => setModalError(false)}>Close</button>
       </Modal>
       <div className="container contact__container">
         <div className="contact__options">

@@ -65,14 +65,23 @@ input:hover,textarea:hover {
 }
 
 .Modal {
-    background-color: blue;
+    position: absolute;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3rem;
+    background: cyan;
 }
-
-.Overlay {
-    background-color: blue;
+  
+.Modal__Overlay {
+    position: fixed;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    background-color: rgba(0,0,0,.6);
 }
-
-
 
 /* MEDIA QUERIES */
 @media screen and (max-width: 1024px) {

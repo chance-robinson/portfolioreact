@@ -3,7 +3,7 @@ import './portfolio.css'
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 import PhotoBomb from '../../assets/photobomb.PNG'
-import BasicWebsite from '../../assets/photobomb.PNG'
+import BasicWebsite from '../../assets/basicWebsite.PNG'
 import MotherEarth from '../../assets/motherEarth.PNG'
 import reactPortfolio from '../../assets/portfolioReact.PNG'
 
