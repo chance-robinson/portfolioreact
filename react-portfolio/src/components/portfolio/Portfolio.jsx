@@ -111,7 +111,7 @@ const Portfolio = () => {
             </div>
             <div className="portfolio__item-cta">
               <a href="https://github.com/chance-robinson/portfolioreact" target='_blank' rel='noopener noreferrer' className='btn btn-primary'>GitHub</a>
-              <a href="https://portfolio.chancerobinson.xyz/" target='_blank' rel='noopener noreferrer' className='btn'>Live Website</a>
+              <a href="https://portfolio1.chancerobinson.xyz/" target='_blank' rel='noopener noreferrer' className='btn'>Live Website</a>
             </div>
           </article>
         </div>
