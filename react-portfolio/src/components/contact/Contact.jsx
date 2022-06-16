@@ -31,7 +31,7 @@ const Contact = () => {
     formData.append('email', emailData);
     formData.append('message', messageData);
 
-    fetch('http://localhost:5000', {
+    fetch('/api', {
       method: "post",
       body: formData
     })
