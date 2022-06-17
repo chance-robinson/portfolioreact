@@ -76,7 +76,7 @@ const Portfolio = () => {
           </article>
           <article className='portfolio__item'>
             <div className="portfolio__item-image">
-              <a href="https://chancerobinson.xyz/" target='_blank' rel='noopener noreferrer'><LazyLoadImage src={BasicWebsite}/></a>
+              <a href="http://chancerobinson.xyz/" target='_blank' rel='noopener noreferrer'><LazyLoadImage src={BasicWebsite}/></a>
             </div>
             <h3>Basic Personal Website</h3>
             <div className="technologies__container">
@@ -91,7 +91,7 @@ const Portfolio = () => {
             </div>
             <div className="portfolio__item-cta">
               <a href="https://github.com/chance-robinson/personalwebsite" target='_blank' rel='noopener noreferrer' className='btn btn-primary'>GitHub</a>
-              <a href="https://chancerobinson.xyz/" target='_blank' rel='noopener noreferrer' className='btn'>Live Website</a>
+              <a href="http://chancerobinson.xyz/" target='_blank' rel='noopener noreferrer' className='btn'>Live Website</a>
             </div>
           </article>
           <article className='portfolio__item'>
