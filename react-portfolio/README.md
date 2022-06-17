@@ -8,3 +8,5 @@
 
 # Need to update
 1. Implement better nav.jsx threshold options (for windows that change size after loading)
+
+UPDATING REAME IN PROGRESS
