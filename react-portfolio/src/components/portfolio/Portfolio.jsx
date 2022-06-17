@@ -27,7 +27,7 @@ const Portfolio = () => {
         <div className="portfolio__items">
         <article className='portfolio__item'>
             <div className="portfolio__item-image">
-              <a href="https://github.com/chance-robinson/portfolioreact" target='_blank' rel='noopener noreferrer'><LazyLoadImage src={reactPortfolio}/></a>
+              <a href="https://portfolio1.chancerobinson.xyz/" target='_blank' rel='noopener noreferrer'><LazyLoadImage src={reactPortfolio}/></a>
             </div>
             <h3>React Portfolio Website</h3>
             <div className="technologies__container">
@@ -76,7 +76,7 @@ const Portfolio = () => {
           </article>
           <article className='portfolio__item'>
             <div className="portfolio__item-image">
-              <a href="https://github.com/chance-robinson/personalwebsite" target='_blank' rel='noopener noreferrer'><LazyLoadImage src={BasicWebsite}/></a>
+              <a href="https://chancerobinson.xyz/" target='_blank' rel='noopener noreferrer'><LazyLoadImage src={BasicWebsite}/></a>
             </div>
             <h3>Basic Personal Website</h3>
             <div className="technologies__container">
