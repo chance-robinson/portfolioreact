@@ -23,7 +23,7 @@ const About = () => {
               <h5>Experience</h5>
               <small>3+ Years in College</small>
             </article>
-            <a href='https://github.com/chance-robinson' className='about__card'>
+            <a href='https://github.com/chance-robinson'  target='_blank' rel='noopener noreferrer' className='about__card'>
               <AiOutlineFolder className='about__icon'></AiOutlineFolder>
               <h5>Projects</h5>
               <small>20+ Completed</small>
