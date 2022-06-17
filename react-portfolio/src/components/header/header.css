@@ -26,6 +26,20 @@ header {
     justify-content: center;
 }
 
+.header__socials a {
+    background: var(--color-lightshade);
+    color: var(--color-main);
+    padding: .7rem .9rem;
+    border-radius: .5rem;
+    border: 1px solid transparent;
+}
+
+.header__socials a:hover {
+    background: var(--color-text);
+    border-color: var(--color-text);
+    color: var(--color-main);
+}
+
 /*Scroll down*/
 .scroll__down {
     position: absolute;

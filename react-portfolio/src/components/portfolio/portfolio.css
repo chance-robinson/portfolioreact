@@ -11,13 +11,14 @@
 .portfolio__item {
     padding: 2rem;
     border-radius: 3rem;
-    border: 1px solid transparent;
-    background: cyan;
+    border: 3px solid transparent;
+    background: var(--color-lightshade);
+    color: var(--color-text);
     transition: var(--transition);
 }
 
 .portfolio__item:hover {
-    border: 1px solid cyan;
+    border: 3px solid var(--color-darkaccent);
     background: transparent;
 }
 
@@ -31,7 +32,7 @@
 .portfolio__item img:hover {
     border-radius: 1rem;
     opacity: .7;
-    border: 3px solid black;
+    border: 3px solid var(--color-darkaccent);
 }
 
 .portfolio__item h3 {

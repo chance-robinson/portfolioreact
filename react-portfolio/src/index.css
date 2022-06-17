@@ -11,10 +11,12 @@
 }
 
 :root {
-    --color-bg: #eddcd9;
     --color-text: #264143;
-    --color-subtext: #de5499;
-    --color-secondary: rgb(27, 206, 131);
+    --color-lightshade: #CCD5AE;
+    --color-lightaccent: #E9EDC9;
+    --color-main: #FEFAE0;
+    --color-darkaccent: #887850;
+    --color-darkshade: #D4A373;
 
     --transition: all 400ms ease;
 
@@ -33,8 +35,8 @@ html {
 
 body {
     font-family: 'Open Sans', sans-serif;
-    background: var(--color-bg);
-    color: var(--color-text);
+    background: var(--color-main);
+    color: var(--color-darkaccent);
     background-image: url(../src/assets/bright-squares.png);
 }
 
@@ -61,18 +63,14 @@ section {
 
 section > h2 {
     text-align: center;
-    color: var(--color-subtext);
+    color: var(--color-darkaccent);
     margin-bottom: 3rem;
 }
 
 section > h5 {
     padding-top: 2rem;
     text-align: center;
-    color: var(--color-subtext);
-}
-
-.text-light {
-    color: var(--color-subtext);
+    color: var(--color-darkaccent);
 }
 
 a {
@@ -81,7 +79,7 @@ a {
 }
 
 a:hover {
-    color: rgb(22, 101, 170);
+    color: var(--color-darkaccent);
 }
 
 .btn {
@@ -96,14 +94,23 @@ a:hover {
 }
 
 .btn:hover {
-    background: white;
-    color: var(--color-bg);
-    border-color: transparent;
+    background: var(--color-lightshade);
+    color: var(--color-main);
+    border-color: var(--color-darkshade);
 }
 
 .btn-primary {
     background-color: var(--color-text);
-    color: var(--color-bg);
+    color: var(--color-lightaccent);
+    border: 1px solid transparent;
+}
+
+.btn:hover {
+    color: var(--color-main);
+}
+
+.btn-primary:hover {
+    border-color: var(--color-darkaccent);
 }
 
 img {

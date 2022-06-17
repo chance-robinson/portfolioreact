@@ -27,18 +27,19 @@ footer {
 }
 
 .footer__socials a {
-    background: var(--color-bg);
+    background: var(--color-lightshade);
+    color: var(--color-main);
     padding: .7rem .9rem;
     border-radius: .5rem;
     border: 1px solid transparent;
 }
 
 .footer__socials a:hover {
-    background: #000;
+    background: var(--color-text);
     padding: .7rem .9rem;
     border-radius: .5rem;
-    border: 1px solid black;
-    color: blue;
+    border-color: var(--color-text);
+    color: var(--color-main);
 }
 
 .footer__copyright {

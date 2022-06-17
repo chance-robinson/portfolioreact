@@ -18,9 +18,19 @@ const Nav = () => {
    }, [])
 
   useEffect(() => {
+    let thresholdWidth;
+    if (window.screen.width > 1024) {
+      thresholdWidth = 0.4;
+    }
+    else if (window.screen.width <= 1024 && window.screen.width > 600) {
+      thresholdWidth = 0.3;
+    }
+    else {
+      thresholdWidth = 0.2;
+    }
 
     const options = {
-        threshold: ".5",
+        threshold: thresholdWidth,
     };
 
     const observer = new IntersectionObserver(entries => {

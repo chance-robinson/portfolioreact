@@ -31,7 +31,8 @@
 .about__card {
     text-align: center;
     border: 1px solid transparent;
-    background: var(--color-secondary);
+    background: var(--color-lightshade);
+    color: var(--color-text);
     border-radius: 1rem;
     padding: 1rem;
     transition: all 500ms ease;
@@ -39,7 +40,7 @@
 
 .about__card:hover {
     background: transparent;
-    border-color: var(--color-secondary);
+    border-color: var(--color-darkaccent);
 }
 
 .about__icon {
@@ -59,6 +60,10 @@
 .about__content p {
     margin-top: 2rem;
     margin-bottom: 3rem;
+}
+
+p {
+    color: var(--color-text);
 }
 
 /* MEDIA QUERIES */

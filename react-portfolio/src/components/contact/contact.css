@@ -10,17 +10,18 @@
 }
 
 .contact__option {
-    background: var(--color-secondary);
+    background: var(--color-lightshade);
     border-radius: 3rem;
-    border: 1px solid transparent;
+    border: 3px solid transparent;
     padding: 3rem;
     text-align: center;
     transition: var(--transition);
+    color: var(--color-text);
 }
 
 .contact__option:hover {
     background: transparent;
-    border: 1px solid var(--color-secondary);
+    border: 3px solid var(--color-darkaccent);
 }
 
 .contact__icons {
@@ -31,7 +32,7 @@
 .contact__option a {
     display: inline-block;
     font-size: 0.9rem;
-    color: brown;
+    color: var(--color-text);
     transition: var(--transition);
     border-radius: 3rem;
     border: 1px solid transparent;
@@ -40,7 +41,9 @@
 
 .contact__option a:hover {
     background: var(--color-text);
+    color: var(--color-main);
 }
+
 .contact__option h4,h5 {
     margin-bottom: .4rem;
 }
@@ -61,7 +64,7 @@ input, textarea {
 }
 
 input:hover,textarea:hover {
-    border: 3px solid var(--color-text);
+    border: 3px solid var(--color-darkaccent);
 }
 
 .Modal {
@@ -72,15 +75,21 @@ input:hover,textarea:hover {
     align-items: center;
     justify-content: center;
     border-radius: 3rem;
-    background: cyan;
+    background: var(--color-main);
+    color: var(--color-lightshade);
 }
-  
+
+.Modal p {
+    margin-bottom: 1rem;
+}
+
 .Modal__Overlay {
     position: fixed;
     inset: 0;
     display: grid;
     place-items: center;
     background-color: rgba(0,0,0,.6);
+
 }
 
 /* MEDIA QUERIES */
