@@ -1,6 +1,6 @@
 footer {
     margin-top: 5rem;
-    background: var(--color-secondary);
+    background: var(--color-lightshade);
     padding: 3rem 0rem;
     text-align: center;
     font-size: .9rem;
@@ -27,7 +27,7 @@ footer {
 }
 
 .footer__socials a {
-    background: var(--color-lightshade);
+    background: var(--color-darkaccent);
     color: var(--color-main);
     padding: .7rem .9rem;
     border-radius: .5rem;
